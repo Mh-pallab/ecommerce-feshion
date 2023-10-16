@@ -14,6 +14,10 @@
    <link rel="dns-prefetch" href="//fonts.bunny.net">
    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
    <!-- Scripts -->
    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -22,7 +26,7 @@
    <div id="app">
       <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
          <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ url('/home') }}">
                <img src="{{ asset('picture/logo.png') }}" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -105,7 +109,7 @@
          </div>
       </nav>
 
-      <main class="py-4">
+      <main class="pb-4">
          @yield('content')
       </main>
    </div>
