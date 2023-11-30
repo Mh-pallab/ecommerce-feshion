@@ -101,7 +101,16 @@
       </nav>
 
       <main class="pb-4">
-         @yield('content')
+         @if (Auth::check() && Auth::user()->role == 'user')
+            @yield('content')
+         @else
+            <div class="container">
+               <div class="row mt-3">
+                  @include('layouts.adminSidebar')
+                  @yield('content')
+               </div>
+            </div>
+         @endif
       </main>
    </div>
 </body>
