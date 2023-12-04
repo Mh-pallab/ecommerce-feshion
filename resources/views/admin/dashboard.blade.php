@@ -8,7 +8,7 @@
             <div class="card">
                <div class="card-body">
                   <h5>Brand</h5>
-                  <h6>Count</h6>
+                  <h6>{{ $count_brand }}</h6>
                </div>
             </div>
          </div>
@@ -16,8 +16,8 @@
          <div class="col-sm-4">
             <div class="card">
                <div class="card-body">
-                  <h5>Category</h5>
-                  <h6>Count</h6>
+                  <h5>Sub Category</h5>
+                  <h6>{{ $count_category }}</h6>
                </div>
             </div>
          </div>
@@ -26,7 +26,7 @@
             <div class="card">
                <div class="card-body">
                   <h5>Sub-Category</h5>
-                  <h6>Count</h6>
+                  <h6>{{ $count_subcategory }}</h6>
                </div>
             </div>
          </div>

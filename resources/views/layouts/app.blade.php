@@ -103,13 +103,15 @@
       <main class="pb-4">
          @if (Auth::check() && Auth::user()->role == 'user')
             @yield('content')
-         @else
+         @elseif(Auth::check() && Auth::user()->role == 'admin')
             <div class="container">
                <div class="row mt-3">
                   @include('layouts.adminSidebar')
                   @yield('content')
                </div>
             </div>
+         @else
+            @yield('content')
          @endif
       </main>
    </div>
