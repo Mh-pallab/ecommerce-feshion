@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Brand;
-use App\Models\Category;
 use App\Models\Product;
+use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
@@ -78,7 +79,29 @@ class ProductController extends Controller
     */
    public function update(Request $request, Product $product)
    {
-      $product->update($request->except('_token', '_method'));
+
+
+      $data = $request->except('image', '_token', '_method');
+
+      if ($request->hasFile('image')) {
+
+         //remove previous image
+         if ($product->image != '') {
+            File::delete($product->image);
+         }
+
+         $imageFile = $request->image;
+
+         $imageName = mt_rand() . '.' . $imageFile->extension();
+
+         $imageFile->move(public_path('backend/images/product'), $imageName);
+
+         $path = 'backend/images/product/' . $imageName;
+
+         $data['image'] = $path;
+      }
+
+      $product->update($data);
       return to_route('product.index');
    }
 
@@ -87,6 +110,11 @@ class ProductController extends Controller
     */
    public function destroy(Product $product)
    {
+      //remove image
+      if ($product->image != '') {
+         File::delete($product->image);
+      }
+
       $product->delete();
       return to_route('product.index');
    }
