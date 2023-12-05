@@ -1,0 +1,240 @@
+.banner {
+   background-image: url("../../public/picture/img_1.png");
+   background-size: cover;
+   background-position: center;
+   padding-left: 50px;
+   padding-right: 50px;
+
+
+   .row {
+      height: 70vh;
+
+      .col-md-6 {
+
+         h1 {
+            font-family: $font-lato;
+            font-weight: 800;
+            font-size: 48px;
+            color: rgba(255, 255, 255, 1);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-bottom: 50px;
+
+         }
+
+         button {
+            border-radius: 0;
+            font-family: $font-lato;
+            font-weight: 700;
+            font-size: 21px;
+            border: 5px solid;
+         }
+      }
+   }
+}
+
+.newArrivals {
+   .text {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 60px;
+
+      h3 {
+         font-family: $font-arimo;
+         font-weight: 700;
+         font-size: 36px;
+      }
+
+      p {
+         font-family: $font-lato;
+         font-weight: 400;
+         font-size: 20px;
+         color: rgba(85, 85, 85, 1);
+      }
+   }
+
+   .row {
+      .col {
+         .card {
+            border: none;
+
+            img {
+               border-radius: 0;
+            }
+
+            .card-body {
+               text-align: center;
+
+               h5 {
+                  font-family: $font-arimo;
+                  font-size: 16px;
+                  font-weight: 700;
+               }
+
+               p {
+                  color: rgba(2, 78, 130, 1);
+                  font-weight: 400;
+                  font-size: 16px;
+                  font-family: $font-lato;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+.supportInfo {
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+
+   div {
+      div {
+         div {
+            i {
+               font-size: 25px;
+               color: rgba(2, 78, 130, 1);
+            }
+         }
+
+         div {
+
+            h6 {
+               color: rgba(29, 29, 29, 1);
+               font-size: 16px;
+               font-weight: 900;
+               font-family: $font-arimo;
+            }
+
+            p {
+               font-family: $font-lato;
+               font-weight: 400;
+               font-size: 16px;
+               color: rgba(85, 85, 85, 1);
+            }
+         }
+      }
+   }
+}
+
+.peaceOfMind {
+
+
+   div {
+      font-family: $font-lato;
+      color: white;
+      padding: 100px 8vh;
+      background-color: black;
+
+      h2 {
+         font-weight: 400;
+         font-family: $font-lato;
+         font-size: 32px;
+         padding-bottom: 15px;
+         text-transform: uppercase;
+      }
+
+      p {
+         font-weight: 400;
+         font-family: $font-lato;
+         font-size: 18px;
+         padding-bottom: 15px;
+      }
+
+      a {
+         border-radius: 0;
+      }
+   }
+}
+
+.topSellers {
+   margin-top: 5rem;
+}
+
+.topSellersButton {
+   a {
+      background-color: rgba(2, 78, 130, 1);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 2rem;
+   }
+
+}
+
+.footer {
+   background-color: rgb(241, 241, 241);
+   padding-left: 5%;
+   padding-right: 5%;
+
+   .links {
+      padding-bottom: 70px;
+
+
+      div {
+         p {
+            font-family: $font-arimo;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+         }
+
+         a {
+            text-decoration: none;
+            display: block;
+            font-family: $font-lato;
+            font-size: 16px;
+            color: rgba(29, 29, 29, 1);
+
+            &:hover {
+               color: green;
+            }
+         }
+
+         input {
+            border: none;
+            border-bottom: 1px solid rgba(29, 29, 29, 1);
+            border-radius: 0;
+            display: inline;
+            width: 80%;
+         }
+
+         button {
+            padding: 0;
+
+            i {
+               border: none;
+               font-size: 16px;
+               font-weight: 900;
+            }
+         }
+      }
+   }
+
+   .copyright {
+      border-top: 1px solid black;
+      margin: 10px 0 0 0;
+      padding: 30px 0;
+
+
+      div {
+         padding: 0;
+
+         p {
+            margin: 0;
+            font-family: $font-lato;
+            font-size: 14px;
+            color: rgba(29, 29, 29, 1);
+         }
+      }
+
+      div {
+         i {
+            float: inline-end;
+            font-size: 40px;
+            margin: 0 5px;
+            color: rgb(58, 58, 58);
+         }
+      }
+   }
+}

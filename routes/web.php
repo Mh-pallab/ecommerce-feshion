@@ -32,8 +32,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //user
 Route::middleware(['auth', 'user'])->group(function () {
-   Route::get('/index', [UserController::class, 'index'])->name('index');
 });
+Route::get('/index', [UserController::class, 'index'])->name('index');
 
 
 
