@@ -5,7 +5,7 @@
 </div>
 
 <div class="mb-3">
-   <label for="dropdown" class="form-label">Brand Name</label>
+   <label for="dropdown" class="form-label">Status</label>
    <select name="status" id="dropdown" class="form-select" aria-label="Default select example">
       <option value="active" {{ isset($brand) && $brand->status == 'active' ? 'selected' : '' }}>Active</option>
       <option value="inactive" {{ isset($brand) && $brand->status == 'inactive' ? 'selected' : '' }}>Inactive</option>

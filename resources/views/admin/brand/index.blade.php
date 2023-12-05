@@ -8,7 +8,7 @@
       <table class="table mt-3">
          <thead>
             <th>ID</th>
-            <th>Name</th>
+            <th>Brand Name</th>
             <th>Status</th>
             <th>Action</th>
          </thead>

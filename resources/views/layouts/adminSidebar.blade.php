@@ -10,7 +10,8 @@
                   href="{{ route('category.index') }}">Category</a></li>
             <li><a class="{{ Request::is('subcategory*') ? 'active' : '' }}" href="{{ route('subcategory.index') }}">Sub
                   Category</a></li>
-            <li><a class="{{ Request::is('product*') ? 'active' : '' }}" href="#">Product</a></li>
+            <li><a class="{{ Request::is('product*') ? 'active' : '' }}" href="{{ route('product.index') }}">Product</a>
+            </li>
             <li><a class="{{ Request::is('') ? 'active' : '' }}" href="#">Order List</a></li>
          </ul>
       </div>

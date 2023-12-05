@@ -9,7 +9,7 @@
          <thead>
             <th>ID</th>
             <th>Category</th>
-            <th>Name</th>
+            <th>Sub Category</th>
             <th>Status</th>
             <th>Action</th>
          </thead>

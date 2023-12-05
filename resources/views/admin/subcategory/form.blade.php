@@ -5,8 +5,8 @@
 </div>
 
 <div class="mb-3">
-   <label for="dropdown" class="form-label">Category Name</label>
-   <select name="category_id" id="dropdown" class="form-select" aria-label="Default select example">
+   <label for="category" class="form-label">Category Name</label>
+   <select name="category_id" id="category" class="form-select" aria-label="Default select example">
       <option>--Select a Category--</option>
       @foreach ($categorys as $item)
          <option value="{{ $item->id }}"
@@ -18,7 +18,7 @@
 </div>
 
 <div class="mb-3">
-   <label for="dropdown" class="form-label">Sub Category Name</label>
+   <label for="dropdown" class="form-label">Status</label>
    <select name="status" id="dropdown" class="form-select" aria-label="Default select example">
       <option value="active" {{ isset($subcategory) && $subcategory->status == 'active' ? 'selected' : '' }}>Active
       </option>
